@@ -1,0 +1,34 @@
+.:
+total 0
+29532478 drwxrwxr-x 2 ec2-user ec2-user 52 Jul 17 17:53 Anya
+25327914 drwxrwxr-x 4 ec2-user ec2-user 47 Jul 17 17:53 Loid
+34023449 drwxrwxr-x 3 ec2-user ec2-user 30 Jul 17 17:53 Yor
+
+./Anya:
+total 12
+25327915 -rwxrwxrwx 2 ec2-user ec2-user 9 Jul 17 17:53 home.txt
+29532479 -rwxrwx--- 3 ec2-user ec2-user 9 Jul 17 17:53 homework
+29532479 -rwxrwx--- 3 ec2-user ec2-user 9 Jul 17 17:53 school
+
+./Loid:
+total 4
+  791751 drwxrwxr-x 2 ec2-user ec2-user 24 Jul 17 17:53 Bond
+38034600 drwxrwxr-x 2 ec2-user ec2-user 20 Jul 17 17:53 Franky
+25327915 -rwxrwxrwx 2 ec2-user ec2-user  9 Jul 17 17:53 mission
+
+./Loid/Bond:
+total 4
+791753 -rw-rw-rw- 1 ec2-user ec2-user 9 Jul 17 17:53 papers.txt
+
+./Loid/Franky:
+total 4
+38034601 -rw-rw-rw- 1 ec2-user ec2-user 9 Jul 17 17:53 gadget
+
+./Yor:
+total 4
+29532479 -rwxrwx--- 3 ec2-user ec2-user  9 Jul 17 17:53 help
+  791752 drwxrwxr-x 2 ec2-user ec2-user 20 Jul 17 17:53 Yuri
+
+./Yor/Yuri:
+total 4
+791754 -rw-rw-rw- 1 ec2-user ec2-user 9 Jul 17 17:53 Photos

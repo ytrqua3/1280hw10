@@ -21,7 +21,8 @@ def permStrToOct(perm_str):
 
 os.chdir(sys.argv[1])
 root=os.getcwd()
-print(root)
+inode_path={}
+target_directory=root
 for line in sys.stdin:
 	is_start = line.startswith(".") and line.endswith(":\n")
 	is_total = line.startswith("total")
@@ -37,11 +38,17 @@ for line in sys.stdin:
 		data=line.strip().split(" ")
 		ftype=data[1][0]
 		perm=permStrToOct(data[1][1:])
+		inode=data[0]
 		#print(perm)
 		fname=data[-1]
 		if ftype=='d':
 			os.mkdir(fname)
 			os.chmod(fname, perm)
 		if ftype=='-':
-			createFile(fname)
-			os.chmod(fname, perm)
+			if inode in inode_path:
+				subprocess.run(["ln", inode_path[inode], fname])
+			else:
+				createFile(fname)
+				os.chmod(fname, perm)
+				inode_path[inode]=target_directory+"/"+fname
+				#print(inode_path[inode])

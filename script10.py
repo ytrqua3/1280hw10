@@ -37,7 +37,7 @@ for line in sys.stdin:
 		data=line.strip().split(" ")
 		ftype=data[1][0]
 		perm=permStrToOct(data[1][1:])
-		print(perm)
+		#print(perm)
 		fname=data[-1]
 		if ftype=='d':
 			os.mkdir(fname)
